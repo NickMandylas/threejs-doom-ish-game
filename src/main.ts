@@ -11,7 +11,7 @@ renderer.setSize(width, height);
 
 const mainCamera = new THREE.PerspectiveCamera(60, width / height, 0.1, 100);
 
-const scene = new BlasterScene();
+const scene = new BlasterScene(mainCamera);
 scene.initalize();
 
 function tick() {
